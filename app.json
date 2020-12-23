@@ -8,7 +8,7 @@
     "keywords": ["golang", "ss", "ssr", "vmess", "shadowsocks", "shadowsocksr", "trojan"],
     "env": {
         "CONFIG_FILE": {
-            "description": "Path to config file, could be a url."
+            "description": "./config/config.yaml"
         },
         "DOMAIN": {
             "description": "Domain to use."
