@@ -11,7 +11,7 @@
             "description": "./config/config.yaml"
         },
         "DOMAIN": {
-            "description": "Domain to use."
+            "description": "v2ray-okteto-alex950808.cloud.okteto.net"
         },
         "CF_API_EMAIL": {
             "description": "Cloudflare Email.",
