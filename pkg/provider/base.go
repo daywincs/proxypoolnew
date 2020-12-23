@@ -2,13 +2,13 @@ package provider
 
 import (
 	"fmt"
-	"github.com/Sansui233/proxypool/log"
-	"github.com/Sansui233/proxypool/pkg/healthcheck"
+	"github.com/Alex950808/proxypoolnew/log"
+	"github.com/Alex950808/proxypoolnew/pkg/healthcheck"
 	"math"
 	"strconv"
 	"strings"
 
-	"github.com/Sansui233/proxypool/pkg/proxy"
+	"github.com/Alex950808/proxypoolnew/pkg/proxy"
 )
 
 type Provider interface {

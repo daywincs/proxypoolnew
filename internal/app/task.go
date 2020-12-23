@@ -1,16 +1,16 @@
 package app
 
 import (
-	"github.com/Sansui233/proxypool/config"
-	"github.com/Sansui233/proxypool/log"
-	"github.com/Sansui233/proxypool/pkg/healthcheck"
+	"github.com/Alex950808/proxypoolnew/config"
+	"github.com/Alex950808/proxypoolnew/log"
+	"github.com/Alex950808/proxypoolnew/pkg/healthcheck"
 	"sync"
 	"time"
 
-	"github.com/Sansui233/proxypool/internal/cache"
-	"github.com/Sansui233/proxypool/internal/database"
-	"github.com/Sansui233/proxypool/pkg/provider"
-	"github.com/Sansui233/proxypool/pkg/proxy"
+	"github.com/Alex950808/proxypoolnew/internal/cache"
+	"github.com/Alex950808/proxypoolnew/internal/database"
+	"github.com/Alex950808/proxypoolnew/pkg/provider"
+	"github.com/Alex950808/proxypoolnew/pkg/proxy"
 )
 
 var location, _ = time.LoadLocation("PRC")
