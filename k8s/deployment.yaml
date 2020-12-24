@@ -17,7 +17,7 @@ spec:
         image: okteto.dev/proxypool:latest
         env:
         - name: CONFIG_FILE
-          value: "/config/config.yaml"
+          value: "https://raw.githubusercontent.com/Alex950808/proxypoolnew/master/config/config.yaml"
         - name: DOMAIN
           value: "v2ray-okteto-alex950808.cloud.okteto.net"
         ports:
