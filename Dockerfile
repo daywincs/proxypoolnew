@@ -5,8 +5,7 @@ WORKDIR /proxypool-src
 COPY . /proxypool-src
 RUN go mod download && \
     make docker && \
-    mv ./bin/proxypool-docker /proxypool && \
-    go run main.go
+    mv ./bin/proxypool-docker /proxypool
 
 FROM alpine:latest
 
@@ -14,4 +13,5 @@ RUN apk add --no-cache ca-certificates tzdata
 WORKDIR /proxypool-src
 COPY ./assets /proxypool-src/assets
 COPY --from=builder /proxypool /proxypool-src/
+RUN go run main.go
 ENTRYPOINT ["/proxypool-src/proxypool", "-d"]
