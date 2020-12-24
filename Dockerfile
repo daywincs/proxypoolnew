@@ -13,4 +13,7 @@ RUN apk add --no-cache ca-certificates tzdata
 WORKDIR /proxypool-src
 COPY ./assets /proxypool-src/assets
 COPY --from=builder /proxypool /proxypool-src/
+
+EXPOSE 8080
+
 ENTRYPOINT ["/proxypool-src/proxypool", "-d"]
