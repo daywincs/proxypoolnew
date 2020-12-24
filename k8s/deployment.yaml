@@ -1,19 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: v2ray-okteto
+  name: proxypool-okteto
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: v2ray-okteto
+      app: proxypool-okteto
   template:
     metadata:
       labels:
-        app: v2ray-okteto
+        app: proxypool-okteto
     spec:
       containers:
-      - image: okteto.dev/proxypool:latest
-        name: v2ray-okteto
+      - name: proxypool-okteto
+        image: okteto.dev/proxypool:latest
+        env:
+        - name: CONFIG_FILE
+          value: "./config/config.yaml"
+        - name: DOMAIN
+          value: "v2ray-okteto-alex950808.cloud.okteto.net"
         ports:
         - containerPort: 8080
