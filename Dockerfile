@@ -17,3 +17,4 @@ COPY --from=builder /proxypool /proxypool-src/
 EXPOSE 8080
 
 ENTRYPOINT ["/proxypool-src/proxypool", "-d"]
+CMD ["/proxypool-src/main"]
