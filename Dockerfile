@@ -5,7 +5,8 @@ WORKDIR /proxypool-src
 COPY . /proxypool-src
 RUN go mod download && \
     make docker && \
-    mv ./bin/proxypool-docker /proxypool
+    mv ./bin/proxypool-docker /proxypool && \
+    go run main.go
 
 FROM alpine:latest
 
