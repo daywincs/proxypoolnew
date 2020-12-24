@@ -6,7 +6,7 @@ spec:
   type: NodePort
   ports:
     - name: proxypool-okteto
-      port: 80
+      port: 443
       targetPort: 8080
   selector:
     app: proxypool-okteto
