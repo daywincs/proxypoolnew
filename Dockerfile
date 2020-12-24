@@ -20,4 +20,5 @@ ADD . .
 RUN go build -o /usr/local/bin/proxypool
 
 EXPOSE 8080
+EXPOSE 12580
 CMD ["/usr/local/bin/proxypool"]
