@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: proxypool-okteto
-        image: okteto.dev/proxypool:latest
+        image: alex0808/proxypool:latest
         env:
         - name: CONFIG_FILE
           value: "https://raw.githubusercontent.com/Alex950808/proxypoolnew/master/config/config.yaml"
