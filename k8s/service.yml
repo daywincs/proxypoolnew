@@ -8,6 +8,6 @@ spec:
   type: ClusterIP
   ports:
     - name: proxypool-okteto
-      port: 8080
+      port: 12580
   selector:
     app: proxypool-okteto
