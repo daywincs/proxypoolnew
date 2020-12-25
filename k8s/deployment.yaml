@@ -21,4 +21,4 @@ spec:
         - name: DOMAIN
           value: "proxypool-okteto-alex950808.cloud.okteto.net"
         ports:
-        - containerPort: 8080
+        - containerPort: 12580
