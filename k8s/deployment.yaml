@@ -19,6 +19,6 @@ spec:
         - name: CONFIG_FILE
           value: "https://raw.githubusercontent.com/Alex950808/proxypoolnew/master/config/config.yaml"
         - name: DOMAIN
-          value: "proxypool-okteto-alex950808.cloud.okteto.net"
+          value: "proxypool-okteto-proxypool-alex950808.cloud.okteto.net"
         ports:
         - containerPort: 12580
