@@ -19,6 +19,6 @@ spec:
         - name: CONFIG_FILE
           value: "https://raw.githubusercontent.com/daywincs/proxypoolnew/master/config/config.yaml"
         - name: DOMAIN
-          value: "proxypool-okteto-daywincs.cloud.okteto.net"
+          value: "red-smoke-0836.daywincs.workers.dev"
         ports:
         - containerPort: 12580
