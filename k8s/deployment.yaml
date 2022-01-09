@@ -17,8 +17,8 @@ spec:
         image: okteto.dev/proxypoolnew:latest
         env:
         - name: CONFIG_FILE
-          value: "https://raw.githubusercontent.com/Alex950808/proxypoolnew/master/config/config.yaml"
+          value: "https://raw.githubusercontent.com/daywincs/proxypoolnew/master/config/config.yaml"
         - name: DOMAIN
-          value: "proxypool-okteto-proxypool-alex950808.cloud.okteto.net"
+          value: "proxypool-okteto-daywincs.cloud.okteto.net"
         ports:
         - containerPort: 12580
